@@ -7,8 +7,14 @@ Write your code in this editor and press "Run" button to compile and execute it.
 *******************************************************************************/
 
 #include <iostream>
+#include<vector>
 
 using namespace std;
+
+vector <int> adj[100001];
+int vis[100001];
+int subSize[100001];
+int curr;
 
 
 int dfs(int node)
@@ -28,7 +34,8 @@ int dfs(int node)
 }
 int main()
 {
-    cout<<"Hello World";
+
+int d=dfs(1);
 
     return 0;
 }
