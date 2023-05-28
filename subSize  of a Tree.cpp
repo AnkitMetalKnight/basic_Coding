@@ -21,12 +21,12 @@ int dfs(int node)
 {
     vis[node]=1;
     curr=1;
-    
+
     for(int child:adj[node])
     {
         if(vis[node]==0)
         {
-            curr+=dfs(node);
+            curr+=dfs(child);
         }
     }
     subSize[node]=curr;
