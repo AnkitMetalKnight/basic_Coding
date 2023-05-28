@@ -22,7 +22,7 @@ int dfs(int node)
     vis[node]=1;
     curr=1;
     
-    for(int child:adj[node])
+    for(int child:adj[child])
     {
         if(vis[node]==0)
         {
