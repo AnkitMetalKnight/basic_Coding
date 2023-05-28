@@ -26,7 +26,7 @@ int dfs(int node)
     {
         if(vis[node]==0)
         {
-            curr+=dfs(node);
+            curr+=dfs(child);
         }
     }
     subSize[node]=curr;
