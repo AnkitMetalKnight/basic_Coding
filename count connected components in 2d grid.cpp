@@ -19,7 +19,7 @@ bool isValid(int x, int y)
     if(x<1 || x>N || y<1 || y>M)
     return false;
     
-    if(vis[x][y]==1)
+    if(vis[x][y]==1 || arr[x][y]==0)
     return false;
     
     return true;
